@@ -94,6 +94,7 @@ DB_AVAILABLE = all([
     DB_PORT
 ])
 
+
 POSTGRES_READY= str(os.environ.get('POSTGRES_READY')) == '0'
 
 if DB_AVAILABLE and POSTGRES_READY:
